@@ -1,0 +1,41 @@
+.home {
+	width: 100vw;
+
+	.menu-list {
+		width: 180px;
+		height: 100vh;
+		position: fixed;
+
+		.ant-menu {
+			height: 100vh;
+		}
+	}
+
+	.main-app {
+		margin-left: 180px;
+		transition: margin-left 0.3s;
+
+		&.menu {
+			margin-left: 80px;
+		}
+
+		.main-header {
+			display: flex;
+			align-items: center;
+            justify-content: space-between;
+            height: 50px;
+			border: 1px solid #eee;
+			padding: 0 20px 0 10px;
+
+			.left {
+				display: flex;
+				align-items: center;
+                justify-content: space-around;
+                
+                .bread-crumb{
+                    margin-left: 20px;
+                }
+			}
+		}
+	}
+}
